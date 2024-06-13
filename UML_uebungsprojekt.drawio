@@ -1,0 +1,53 @@
+<mxfile host="65bd71144e">
+    <diagram id="vuwY3Aekv1-RXqtwf47L" name="Page-1">
+        <mxGraphModel dx="760" dy="501" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="player" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="60" width="240" height="146" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="# name: std::string&#10;# playerTurn: boolean&#10;" style="text;strokeColor=#000000;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="2">
+                    <mxGeometry y="30" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="# virtual playerAction(playerTurn): void&#10;+ playerWin() : boolean&#10; " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#dae8fc;labelBorderColor=none;strokeColor=#000000;fontColor=#000000;labelBackgroundColor=none;" vertex="1" parent="2">
+                    <mxGeometry y="110" width="240" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="human : player" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="250" width="200" height="146" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="text;strokeColor=#000000;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="13">
+                    <mxGeometry y="30" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="- playerAction() override" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#dae8fc;labelBorderColor=none;strokeColor=#000000;fontColor=#000000;labelBackgroundColor=none;" vertex="1" parent="13">
+                    <mxGeometry y="110" width="200" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="klöj&#10;" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;fontColor=none;endArrow=block;endFill=0;fillColor=#f5f5f5;strokeColor=#000000;labelBackgroundColor=none;noLabel=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="13" target="2">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="411" y="190" as="sourcePoint"/>
+                        <mxPoint x="111" y="230" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="field" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="60" width="200" height="146" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="- size : " style="text;strokeColor=#000000;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="18">
+                    <mxGeometry y="30" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="+ fieldupdate() : " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#dae8fc;labelBorderColor=none;strokeColor=#000000;fontColor=#000000;labelBackgroundColor=none;" vertex="1" parent="18">
+                    <mxGeometry y="110" width="200" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="chip" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="250" width="200" height="146" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="- position[] : int  &#10;- shape : std::string&#10;# owner : player" style="text;strokeColor=#000000;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="21">
+                    <mxGeometry y="30" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="# playerAction(): void " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#dae8fc;labelBorderColor=none;strokeColor=#000000;fontColor=#000000;labelBackgroundColor=none;" vertex="1" parent="21">
+                    <mxGeometry y="110" width="200" height="36" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
